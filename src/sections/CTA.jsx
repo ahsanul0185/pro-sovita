@@ -47,7 +47,7 @@ export default function CTA() {
   </div>
 
 <div className="flex justify-center">
-    <Button onClick={() => setShowPopup(true)} className="mt-12 px-7">Réserver un appel</Button>
+    <Button onClick={() => setShowPopup(true)} className="mt-12 px-7">Demander un RDV conseil</Button>
 
 </div>
   {showPopup && <Customer_info setShowPopup={setShowPopup}/>}

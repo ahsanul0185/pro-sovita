@@ -47,7 +47,7 @@ export default function MobileMenu({open, toggleMenu}) {
 
         <div className="pt-6">
           <Button isBookCallButton={true} onClick={toggleMenu}>
-            Réserver un appel
+            Demander un RDV conseil
           </Button>
         </div>
     </div>

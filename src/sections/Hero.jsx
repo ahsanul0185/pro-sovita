@@ -50,7 +50,7 @@ export default function Hero() {
               des sites modernes, performants et abordables.
             </p>
 
-            <Button isBookCallButton={true}>Réserver un appel de découverte</Button>
+            <Button isBookCallButton={true}>Demander un RDV conseil</Button>
 
             <div className="flex items-center gap-3 text-gray-600">
               <div className="w-3 h-3 bg-emerald-500 rounded-full animate-pulse"></div>

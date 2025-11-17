@@ -139,7 +139,7 @@ export default function FeaturesCarousel() {
         {/* CTA Button */}
         <div className="flex justify-center mt-12">
           <Button isBookCallButton={true}>
-             Réserver un appel
+             Demander un RDV conseil
           </Button>
         </div>
       </div>

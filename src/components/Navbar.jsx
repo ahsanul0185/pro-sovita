@@ -45,7 +45,7 @@ export default function Navbar() {
         {/* Desktop button */}
         <div className="hidden md:block">
           <Button isBookCallButton={true}>
-            Réserver un appel
+            Demander un RDV conseil
           </Button>
         </div>
 
