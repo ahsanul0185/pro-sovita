@@ -1,7 +1,16 @@
+"use client"
+
+import Button from "@/components/Button";
+import Contact_Form from "@/components/ContactForm";
+import Customer_info from "@/components/Form";
+import { useState } from "react";
 
 
 export default function CTA() {
-    return <section className="bg-[#010101] section-padding">
+
+    const [showPopup, setShowPopup] = useState(false);
+
+    return <section className="bg-dark section-padding">
  {/* Subtle gradient accents */}
   <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 via-transparent to-purple-500/5 pointer-events-none" />
 
@@ -35,6 +44,13 @@ export default function CTA() {
       <Feature text="Pas de frais cachés" />
     </div>
   </div>
+
+<div className="flex justify-center">
+    <Button onClick={() => setShowPopup(true)} className="mt-12 px-7">Réserver un appel</Button>
+
+</div>
+  {showPopup && <Customer_info setShowPopup={setShowPopup}/>}
+  {/* <Contact_Form /> */}
     </section>
 }
 
