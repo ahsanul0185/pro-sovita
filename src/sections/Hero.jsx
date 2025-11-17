@@ -62,7 +62,7 @@ export default function Hero() {
           </div>
 
           {/* Right Content - Browser Mockup with Image Slider */}
-          <div data-aos="zoom-out" className="relative">
+          <div data-aos="fade-left" className="relative">
             <div className="relative transform transition-transform duration-500">
               {/* Browser Mockup Container */}
               <div className="bg-white rounded-xl shadow-2xl overflow-hidden">
