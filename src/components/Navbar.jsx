@@ -12,7 +12,6 @@ export default function Navbar() {
 
   const toggleMenu = () => setOpen(!open);
 
-  console.log(open)
 
   return (
     <div className="sticky top-0 bg-white backdrop-blur-3xl w-full z-50 border-b border-gray-200">
