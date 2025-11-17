@@ -57,6 +57,7 @@ export default function WorkWithSovita() {
           <div className="space-y-12">
             {steps.map((step, index) => (
               <div
+              data-aos="fade-up"
                 key={index}
                 className="relative flex items-start gap-6 group"
               >

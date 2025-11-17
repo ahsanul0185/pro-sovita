@@ -118,7 +118,7 @@ export default function Pricing() {
         </div>
 
         {/* Maintenance box */}
-        <div className="mt-16 flex justify-center">
+        <div data-aos="fade" className="mt-16 flex justify-center">
           <div className="max-w-xl w-full border border-primary/40 bg-primary/5 rounded-2xl p-6">
             <div className="flex items-center gap-2">
               <span className="text-primary text-xl"><Lock /></span>

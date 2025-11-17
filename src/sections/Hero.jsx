@@ -45,7 +45,7 @@ export default function Hero() {
               .
             </h1>
 
-            <p data-aos="fade-up" className="text-lg text-gray-600 leading-relaxed max-w-xl">
+            <p className="text-lg text-gray-600 leading-relaxed max-w-xl">
               Nous accompagnons commerces, PME, indépendants, associations, avec
               des sites modernes, performants et abordables.
             </p>
@@ -62,7 +62,7 @@ export default function Hero() {
           </div>
 
           {/* Right Content - Browser Mockup with Image Slider */}
-          <div data-aos="fade-up" className="relative">
+          <div data-aos="zoom-out" className="relative">
             <div className="relative transform transition-transform duration-500">
               {/* Browser Mockup Container */}
               <div className="bg-white rounded-xl shadow-2xl overflow-hidden">
