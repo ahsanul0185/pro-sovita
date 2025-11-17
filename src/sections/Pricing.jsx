@@ -62,7 +62,7 @@ export default function Pricing() {
 
 
         {/* Pricing Cards */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div data-aos="fade-up" className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {plans.map((plan, idx) => (
             <div
               key={idx}

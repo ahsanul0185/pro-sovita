@@ -79,7 +79,7 @@ export default function FeaturesCarousel() {
                 slidesPerView: 3,
               },
             }}
-            className=""
+            className="!px-1"
           >
             {features.map((feature, index) => (
               <SwiperSlide key={index}>
