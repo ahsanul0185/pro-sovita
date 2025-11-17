@@ -1,4 +1,7 @@
+"use client"
+
 import { CheckCircle, Calendar, ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 
 export default function ThankYouPage() {
@@ -68,18 +71,18 @@ export default function ThankYouPage() {
 
           {/* CTA Button */}
           <div className="flex justify-center">
-            <button className="group bg-primary hover:bg-[#0066a6] text-white px-6 md:px-10 py-3 md:py-5 rounded-full md:text-lg transition-all duration-300 cursor-pointer flex items-center gap-3">
+            <Link href="https://calendly.com/contact-hoq/mise-en-place" className="group bg-primary hover:bg-[#0066a6] text-white px-6 md:px-10 py-3 md:py-5 rounded-full md:text-lg transition-all duration-300 cursor-pointer flex items-center gap-3">
               Réserver mon rendez-vous
               <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
-            </button>
+            </Link>
           </div>
         </div>
 
         {/* Bottom decoration */}
         <div className="flex justify-center gap-2 mt-8">
-          <div className="w-2 h-2 bg-[#0081cf] rounded-full animate-bounce"></div>
-          <div className="w-2 h-2 bg-[#0081cf] rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
-          <div className="w-2 h-2 bg-[#0081cf] rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
+          <div className="w-2 h-2 bg-primary rounded-full animate-bounce"></div>
+          <div className="w-2 h-2 bg-primary rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
+          <div className="w-2 h-2 bg-primary rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
         </div>
       </div>
     </div>
