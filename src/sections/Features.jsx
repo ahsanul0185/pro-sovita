@@ -50,7 +50,7 @@ export default function FeaturesCarousel() {
         </div>
 
         {/* Swiper Carousel */}
-        <div className="relative px-12">
+        <div className="relative">
           <Swiper
             modules={[Navigation, Autoplay]}
             spaceBetween={30}
@@ -79,11 +79,11 @@ export default function FeaturesCarousel() {
                 slidesPerView: 3,
               },
             }}
-            className="!px-1"
+            className="!px-1 w-full!"
           >
             {features.map((feature, index) => (
               <SwiperSlide key={index}>
-                <div className="h-[400px]">
+                <div className="h-[400px] w-full">
                   <div className="bg-white rounded-xl px-8 py-12 transition-all duration-300  border border-gray-200 h-full flex flex-col">
                     {/* Icon */}
                     <div className={`w-24 h-24 mx-auto mb-6 rounded-2xl ${feature.iconBg} flex items-center justify-center ${feature.iconColor}`}>
@@ -105,11 +105,11 @@ export default function FeaturesCarousel() {
 
           {/* Custom Navigation Buttons */}
           <button
-            className="swiper-button-prev-custom absolute left-0 translate-x-1/2 cursor-pointer top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white rounded-full transition-all duration-300 flex items-center justify-center group border border-gray-200 hover:border-primary"
+            className="swiper-button-prev-custom absolute left-0 -translate-x-[40%] cursor-pointer top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white rounded-full transition-all duration-300 flex items-center justify-center group border border-gray-200 hover:border-primary"
             aria-label="Previous"
           >
             <svg
-              className="w-6 h-6 text-gray-600 group-hover:text-[#0081cf] transition-colors"
+              className="w-6 h-6 text-gray-600 group-hover:text-primary transition-colors"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -119,11 +119,11 @@ export default function FeaturesCarousel() {
           </button>
 
           <button
-            className="swiper-button-next-custom absolute right-0 -translate-x-1/2 cursor-pointer top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white rounded-full transition-all duration-300 flex items-center justify-center group border border-gray-200 hover:border-primary"
+            className="swiper-button-next-custom absolute right-0 translate-x-[40%] cursor-pointer top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white rounded-full transition-all duration-300 flex items-center justify-center group border border-gray-200 hover:border-primary"
             aria-label="Next"
           >
             <svg
-              className="w-6 h-6 text-gray-600 group-hover:text-[#0081cf] transition-colors"
+              className="w-6 h-6 text-gray-600 group-hover:text-primary transition-colors"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"

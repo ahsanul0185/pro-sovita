@@ -2,29 +2,30 @@ export default function WorkWithSovita() {
   const steps = [
     {
       number: "01",
-      title: "Discovery Call",
+      title: "Appel de découverte",
       description:
-        "We discuss for 30 minutes with you to evaluate your needs and answer your questions about our pricing and service.",
+        "Nous discutons pendant 30 minutes avec vous pour évaluer vos besoins et répondre à vos questions concernant nos tarifs et nos services.",
     },
     {
       number: "02",
-      title: "Content and Site Appearance",
+      title: "Contenu et apparence du site",
       description:
-        "We send you a questionnaire to fill out before building your site. This is the moment for us to get maximum details and illustrations so your site is as close as possible to your dream site.",
+        "Nous vous envoyons un questionnaire à remplir avant la création de votre site. C’est le moment pour nous de recueillir un maximum de détails et d’illustrations afin que votre site corresponde le plus possible à celui de vos rêves.",
     },
     {
       number: "03",
-      title: "Version 1 Delivery",
+      title: "Livraison de la version 1",
       description:
-        "Within 5 business days, we reveal the first version of your site to you. For you to observe everything and share your modifications with us.",
+        "Sous 5 jours ouvrés, nous vous présentons la première version de votre site. Vous pouvez alors tout observer et nous transmettre vos modifications.",
     },
     {
       number: "04",
-      title: "Final Version Delivery",
+      title: "Livraison de la version finale",
       description:
-        "We proceed with corrections and adjustments. Once validated, we proceed with putting your site online and connecting your domain name. Your site is now accessible to everyone!",
+        "Nous effectuons les corrections et ajustements nécessaires. Une fois validé, nous procédons à la mise en ligne de votre site et à la connexion de votre nom de domaine. Votre site est maintenant accessible à tous !",
     },
   ];
+
 
   return (
     <section id="process" className="relative section-padding bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-20 px-6 overflow-hidden">
@@ -38,14 +39,14 @@ export default function WorkWithSovita() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-light text-white mb-4">
-            Work with{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-primary">
-              SOVITA
+            Travailler avec{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r italic font-serif from-cyan-400 to-primary">
+              Sovita
             </span>
             .
           </h2>
           <p className="text-xl md:text-2xl text-gray-300 font-light">
-            What are the steps?
+            Quelles sont les étapes ?
           </p>
         </div>
 
@@ -68,7 +69,7 @@ export default function WorkWithSovita() {
                   </div> */}
 
                   <div
-                    className="w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center bg-gradient-to-br from-primary/10 to-primary/30 ring-2 ring-primary/40 backdrop-blur-sm transition-all duration-300"
+                    className="w-14 h-14 md:w-20 md:h-20 rounded-full flex items-center justify-center bg-gradient-to-br from-primary/10 to-primary/30 ring-2 ring-primary/40 backdrop-blur-sm transition-all duration-300"
                   >
                     <span className="text-xl md:text-4xl font-bold text-white/80">
                       {step.number}
