@@ -10,8 +10,8 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: #0081cf;
-  --color-primary-light: #1EAAFF;
-  --color-dark : #010101;
+  --color-primary-light: #1eaaff;
+  --color-dark: #010101;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --container-main: 90rem;
@@ -58,4 +58,23 @@ body {
 
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
+}
+
+.swiper-pagination-custom .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #d1d5db;
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.swiper-pagination-custom .swiper-pagination-bullet:hover {
+  background: #9ca3af;
+  transform: scale(1.2);
+}
+
+.swiper-pagination-custom .swiper-pagination-bullet-active {
+  width: 32px;
+  border-radius: 6px;
+  background: #0081cf;
 }

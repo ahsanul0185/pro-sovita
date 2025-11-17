@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AOSWrapper from "@/lib/AOSWrapper";
+import { AppProvider } from "@/lib/AppContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,9 +28,11 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <AOSWrapper>
+          <AppProvider>
         <Navbar />
         {children}
         <Footer />
+        </AppProvider>
         </AOSWrapper>
       </body>
 

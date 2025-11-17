@@ -109,6 +109,7 @@ export default function Pricing() {
 
               {/* Button */}
               <Button
+              isBookCallButton={true}
                 className={`${plan.buttonColor} w-full  mt-8`}
               >
                 Choisir cette formule

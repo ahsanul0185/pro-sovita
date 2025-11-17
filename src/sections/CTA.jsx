@@ -3,14 +3,15 @@
 import Button from "@/components/Button";
 import Contact_Form from "@/components/ContactForm";
 import Customer_info from "@/components/Form";
+import { useApp } from "@/lib/AppContext";
 import { useState } from "react";
 
 
 export default function CTA() {
 
-    const [showPopup, setShowPopup] = useState(false);
+    const {showPopup, setShowPopup} = useApp();
 
-    return <section className="bg-dark section-padding">
+    return <section id="book-appointment" className="bg-dark section-padding">
  {/* Subtle gradient accents */}
   <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 via-transparent to-purple-500/5 pointer-events-none" />
 

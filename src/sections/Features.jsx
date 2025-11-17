@@ -138,32 +138,13 @@ export default function FeaturesCarousel() {
 
         {/* CTA Button */}
         <div className="flex justify-center mt-12">
-          <Button>
-            Réserver un appel
+          <Button isBookCallButton={true}>
+             Réserver un appel
           </Button>
         </div>
       </div>
 
-      <style jsx global>{`
-        .swiper-pagination-custom .swiper-pagination-bullet {
-          width: 12px;
-          height: 12px;
-          background: #d1d5db;
-          opacity: 1;
-          transition: all 0.3s;
-        }
-        
-        .swiper-pagination-custom .swiper-pagination-bullet:hover {
-          background: #9ca3af;
-          transform: scale(1.2);
-        }
-        
-        .swiper-pagination-custom .swiper-pagination-bullet-active {
-          width: 32px;
-          border-radius: 6px;
-          background: #0081cf;
-        }
-      `}</style>
+
     </section>
   );
 }

@@ -1,11 +1,25 @@
-"use client"
+"use client";
 
-import React from 'react'
+import { useApp } from "@/lib/AppContext";
+import React from "react";
 
-const Button = ({onClick, className, children}) => {
+const Button = ({ onClick, className, isBookCallButton, children }) => {
+  const { setShowPopup } = useApp();
+  const handleClick = () => {
+    if (isBookCallButton) {
+      setShowPopup(true);
+    } else {
+      onClick();
+    }
+  };
   return (
-    <button onClick={onClick} className={`bg-primary text-white cursor-pointer px-4 py-2 rounded-full hover:bg-primary/90 ${className}`}>{children}</button>
-  )
-}
+    <button
+      onClick={handleClick}
+      className={`bg-primary text-white cursor-pointer px-5 py-2 rounded-full hover:bg-primary/90 ${className}`}
+    >
+      {children}
+    </button>
+  );
+};
 
-export default Button
+export default Button;

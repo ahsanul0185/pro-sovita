@@ -44,7 +44,9 @@ export default function Navbar() {
 
         {/* Desktop button */}
         <div className="hidden md:block">
-          <Button>Réserver un appel</Button>
+          <Button isBookCallButton={true}>
+            Réserver un appel
+          </Button>
         </div>
 
         {/* Mobile Menu */}
