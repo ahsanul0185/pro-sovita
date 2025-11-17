@@ -1,0 +1,97 @@
+export default function WorkWithSovita() {
+  const steps = [
+    {
+      number: "01",
+      title: "Discovery Call",
+      description:
+        "We discuss for 30 minutes with you to evaluate your needs and answer your questions about our pricing and service.",
+    },
+    {
+      number: "02",
+      title: "Content and Site Appearance",
+      description:
+        "We send you a questionnaire to fill out before building your site. This is the moment for us to get maximum details and illustrations so your site is as close as possible to your dream site.",
+    },
+    {
+      number: "03",
+      title: "Version 1 Delivery",
+      description:
+        "Within 5 business days, we reveal the first version of your site to you. For you to observe everything and share your modifications with us.",
+    },
+    {
+      number: "04",
+      title: "Final Version Delivery",
+      description:
+        "We proceed with corrections and adjustments. Once validated, we proceed with putting your site online and connecting your domain name. Your site is now accessible to everyone!",
+    },
+  ];
+
+  return (
+    <section id="process" className="relative section-padding bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-20 px-6 overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-10 left-10 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-[120px]"></div>
+        <div className="absolute bottom-10 right-10 w-96 h-96 bg-primary-light rounded-full mix-blend-multiply filter blur-[120px]"></div>
+      </div>
+
+      <div className="relative max-w-5xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-light text-white mb-4">
+            Work with{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-primary">
+              SOVITA
+            </span>
+            .
+          </h2>
+          <p className="text-xl md:text-2xl text-gray-300 font-light">
+            What are the steps?
+          </p>
+        </div>
+
+        {/* Steps */}
+        <div className="relative font-light">
+          {/* Vertical line */}
+          {/* <div className="absolute left-8 md:left-12 top-8 bottom-8 w-0.5 bg-gradient-to-b from-cyan-500 via-blue-500 to-cyan-500 opacity-30"></div> */}
+
+          <div className="space-y-12">
+            {steps.map((step, index) => (
+              <div
+                key={index}
+                className="relative flex items-start gap-6 group"
+              >
+                {/* Step number circle */}
+                <div className="relative flex-shrink-0 z-10">
+                  {/* <div className="w-16 h-16 md:w-20 md:h-20 rounded-full  flex items-center justify-center transition-all duration-300">
+                    <span className="text-xl md:text-4xl font-bold text-primary/80">{step.number}</span>
+                  </div> */}
+
+                  <div
+                    className="w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center bg-gradient-to-br from-primary/10 to-primary/30 ring-2 ring-primary/40 backdrop-blur-sm transition-all duration-300"
+                  >
+                    <span className="text-xl md:text-4xl font-bold text-white/80">
+                      {step.number}
+                    </span>
+                  </div>
+
+                  {/* Glow effect */}
+                  {/* <div className="absolute inset-0 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 opacity-0 group-hover:opacity-50 blur-xl transition-opacity duration-300"></div> */}
+                </div>
+
+                {/* Content card */}
+                <div className="flex-1 bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-slate-700/50 group-hover:border-primary-light/50 transition-all duration-300">
+                  <h3 className="text-xl md:text-2xl  text-white mb-3 group-hover:text-primary-light transition-colors duration-300">
+                    {step.title}
+                  </h3>
+                  <p className="text-gray-300 leading-relaxed">
+                    {step.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
