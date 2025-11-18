@@ -43,7 +43,7 @@ export default function FeaturesCarousel() {
 
   return (
     <section className="section-padding">
-      <div className="max-w-main mx-auto">
+      <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="mb-16">
           <Title text1="Les points forts de " text2="votre nouveau site"/>
